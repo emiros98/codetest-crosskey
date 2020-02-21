@@ -1,5 +1,6 @@
 *.class
 
+*.pdf
 ### INTELLIJ IDEA
 *.iml
 .idea/
