@@ -22,14 +22,23 @@ public class Main {
 
     private void run() throws IOException {
         getInput();
+        String name;
+        double sum;
+        double interest;
+        double year;
         for (int i = 0; i < nameList.size(); i++){
-            String s = calculate(nameList.get(i), loanSumList.get(i), interestList.get(i), yearList.get(i));
-            System.out.println("Prospect " + (i+1) + ": " + s);
+            name = nameList.get(i);
+            sum = loanSumList.get(i);
+            interest = interestList.get(i);
+            year = yearList.get(i);
+
+            double s = calculate(sum, interest, year);
+            System.out.println("Prospect " + (i+1) + ": " + name + " wants to borrow " + sum + "€ for a period of " + (int)year + " years and pay " + round(s) + "€ each month.");
         }
     }
 
     /**
-     *
+     * Reads input from file, calls handeinput() to extract info
      * @throws IOException if the file prospects.txt can't be found, or if Bufferedreader throws Exception
      */
     private void getInput() throws IOException {
@@ -95,28 +104,27 @@ public class Main {
     }
 
     /**
-     * Calculates the sum that should be paid each month and prints to standard output
+     * Calculates and returns the sum that should be paid each month
      *
-     * @param name The name of the customer, taken from input
      * @param sum  Total sum of the original loan
      * @param interest Interest rate in %
      * @param years Desired number of years to pay back
      */
-    private String calculate(String name, double sum, double interest, double years){
+    protected double calculate(double sum, double interest, double years){
         double b = (interest/12.0)/100.0;
         double p = years*12.0;
         double x = pow(1.0+b, p);   // we need this number twice, so we calculate it in advance
 
         double e = sum*(b*x)/(x-1.0);
 
-        return (name + " wants to borrow " + sum + "€ for a period of " + (int)years + " years and pay " + round(e) + "€ each month.");
+        return e;
     }
 
     /**
      * Calculates a^b
      * Returns result
      */
-    private double pow(double a, double b){
+    protected double pow(double a, double b){
         double res = a;
         for (int i = 1; i < b; i++){
             res = res*a;
@@ -128,7 +136,7 @@ public class Main {
      * Function for rounding a double to two decimals
      * @param a the double to be rounded
      */
-    private double round(double a){
+    protected double round(double a){
         a = (long)((a*100.0)+0.5);
         return a/100.0;
     }
