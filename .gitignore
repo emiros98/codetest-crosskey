@@ -3,3 +3,13 @@
 
 # Ignore Gradle build output directory
 build
+
+*.class
+*.pdf
+
+### INTELLIJ IDEA
+*.iml
+.idea/
+*.ipr
+*.iws
+/out/
