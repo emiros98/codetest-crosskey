@@ -1,13 +1,30 @@
+package main.java.calculator;
+
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main {
+
+    private ArrayList<String> nameList = new ArrayList<>();
+    private ArrayList<Double> loanSumList = new ArrayList<>();
+    private ArrayList<Double> interestList = new ArrayList<>();
+    private ArrayList<Double> yearList = new ArrayList<>();
+
     public static void main(String[] args) {
         Main m = new Main();
         try {
-            m.getInput();
+            m.run();
         } catch (Exception e) {
             e.printStackTrace();
+        }
+    }
+
+    private void run() throws IOException {
+        getInput();
+        for (int i = 0; i < nameList.size(); i++){
+            String s = calculate(nameList.get(i), loanSumList.get(i), interestList.get(i), yearList.get(i));
+            System.out.println("Prospect " + (i+1) + ": " + s);
         }
     }
 
@@ -55,7 +72,11 @@ public class Main {
 
             //if there are too many or too few numbers
             if (secondSplit.length == 3){
-                calculate(firstSplit[0], Double.parseDouble(secondSplit[0]), Double.parseDouble(secondSplit[1]), Double.parseDouble(secondSplit[2]));
+                //calculate(firstSplit[0], Double.parseDouble(secondSplit[0]), Double.parseDouble(secondSplit[1]), Double.parseDouble(secondSplit[2]));
+                nameList.add(firstSplit[0]);
+                loanSumList.add(Double.parseDouble(secondSplit[0]));
+                interestList.add(Double.parseDouble(secondSplit[1]));
+                yearList.add(Double.parseDouble(secondSplit[2]));
             }
 
         }
@@ -65,8 +86,10 @@ public class Main {
 
             // split should contain a name and three numbers, otherwise we ignore this line
             if (split.length == 4){
-                calculate(split[0], Double.parseDouble(split[1]), Double.parseDouble(split[2]), Double.parseDouble(split[3]));
-
+                    nameList.add(split[0]);
+                    loanSumList.add(Double.parseDouble(split[1]));
+                    interestList.add(Double.parseDouble(split[2]));
+                    yearList.add(Double.parseDouble(split[3]));
             }
         }
     }
@@ -79,14 +102,14 @@ public class Main {
      * @param interest Interest rate in %
      * @param years Desired number of years to pay back
      */
-    private void calculate(String name, double sum, double interest, double years){
+    private String calculate(String name, double sum, double interest, double years){
         double b = (interest/12.0)/100.0;
         double p = years*12.0;
         double x = pow(1.0+b, p);   // we need this number twice, so we calculate it in advance
 
         double e = sum*(b*x)/(x-1.0);
 
-        System.out.println(name + " wants to borrow " + sum + "€ for a period of " + (int)years + " years and pay " + round(e) + "€ each month.");
+        return (name + " wants to borrow " + sum + "€ for a period of " + (int)years + " years and pay " + round(e) + "€ each month.");
     }
 
     /**

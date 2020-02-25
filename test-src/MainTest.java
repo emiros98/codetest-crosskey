@@ -16,10 +16,18 @@ public class MainTest {
 
     @Test
     public void main() {
+
     }
 
     @Test
-    public void name() {
+    public void getInputTest() {
 
     }
+
+    @Test
+    public void handleInputTest(){
+
+    }
+
+
 }
