@@ -45,15 +45,19 @@ public class Main {
      * @throws IOException if the file prospects.txt can't be found, or if Bufferedreader throws Exception
      */
     private void getInput() throws IOException {
-        //String filePath = new File("").getAbsolutePath(); //find absolute path
+        String absolutePath = new File("").getAbsolutePath(); //find absolute path
         //System.out.println(filePath);
         // filePath + "/src/main/resources/prospects.txt"
 
         //InputStream is = getClass().getClassLoader().getResourceAsStream("prospects.txt");
         //InputStreamReader isr = new InputStreamReader(is);
 
-        //BufferedReader reader = new BufferedReader(isr);
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader stdinReader = new BufferedReader(new InputStreamReader(System.in)); // Reader for user input
+        String filename = stdinReader.readLine();
+        stdinReader.close();
+
+        BufferedReader reader = new BufferedReader(new FileReader(absolutePath + filename));                // Reader for input from file
+
         reader.readLine(); //Remove first line of input, containing headers
 
         String line;

@@ -37,6 +37,10 @@ application {
     mainClassName = 'codetest.Main'
 }
 
+run{
+ standardInput = System.in
+}
+
 task copyRes(type: Copy) {
     from 'src/main/resources/prospects.txt'
     into 'src/dist'
