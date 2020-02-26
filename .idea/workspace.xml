@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50729f44-96cd-42e5-afde-18c7bc447ac0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Codetest-Mortageplan.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/prospects.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prospects.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/codetest/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codetest/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/codetest/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/codetest/MainTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +57,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
@@ -70,10 +70,25 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Emilia\OneDrive\Documents\Övrigt\codetest-crosskey\src\main\resources" />
+      <recent name="C:\Users\Emilia\OneDrive\Documents\Övrigt\codetest-crosskey\src\dist" />
       <recent name="C:\Users\Emilia\OneDrive\Documents\Övrigt\codetest-crosskey\src\main\java\codetest" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MainTest">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codetest.Main" />
+      <module name="codetest.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="codetest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -136,6 +151,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.MainTest" />
         <item itemvalue="Gradle.MainTest.testCalculate" />
         <item itemvalue="Gradle.MainTest.testRound" />
@@ -165,7 +181,8 @@
       <option name="presentableId" value="Default" />
       <updated>1582638544659</updated>
       <workItem from="1582638560885" duration="2905000" />
-      <workItem from="1582655875299" duration="802000" />
+      <workItem from="1582655875299" duration="947000" />
+      <workItem from="1582666374285" duration="7724000" />
     </task>
     <servers />
   </component>
@@ -188,22 +205,26 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="490" y="229" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1280.680@0.0.1280.680" timestamp="1582639070709" />
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1582656656850">
+    <state x="421" y="82" key="FileChooserDialogImpl" timestamp="1582720224377">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1582656656850" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1582656656849">
+    <state x="421" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1582720224377" />
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1582746236996">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1582656656849" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1582656656849">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1582746236996" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1582746236996">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1582656656849" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1582656656850">
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1582746236996" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1582746236995">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1582656656850" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1582746236995" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1582746236996">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1582746236996" />
     <state x="354" y="56" key="MultipleFileMergeDialog" timestamp="1582638631861">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

@@ -1,8 +1,11 @@
 package codetest;
 
 import java.io.*;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
 
@@ -42,10 +45,17 @@ public class Main {
      * @throws IOException if the file prospects.txt can't be found, or if Bufferedreader throws Exception
      */
     private void getInput() throws IOException {
-        String filePath = new File("").getAbsolutePath(); //find absolute path
+        //String filePath = new File("").getAbsolutePath(); //find absolute path
+        //System.out.println(filePath);
+        // filePath + "/src/main/resources/prospects.txt"
 
-        BufferedReader reader = new BufferedReader(new FileReader(filePath + "/prospects.txt"));
+        //InputStream is = getClass().getClassLoader().getResourceAsStream("prospects.txt");
+        //InputStreamReader isr = new InputStreamReader(is);
+
+        //BufferedReader reader = new BufferedReader(isr);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         reader.readLine(); //Remove first line of input, containing headers
+
         String line;
         while ((line = reader.readLine()) != null){
             if (!line.isEmpty()){                       //remove empty lines
