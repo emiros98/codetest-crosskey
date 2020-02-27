@@ -25,11 +25,13 @@ public class MainTest {
 
     @Test
     public void testRound(){
-        double a = 100.555;
-        double b = 3.001;
+        double a = 5.005;
+        double b = 1.236;
         double c = 50.0;
-        assertEquals(100.56, m.round(a), 0.0);
-        assertEquals(3.0, m.round(b), 0.0);
+        double d = 0.121;
+        assertEquals(5.01, m.round(a), 0.0);
+        assertEquals(1.24, m.round(b), 0.0);
         assertEquals(50.0, m.round(c), 0.0);
+        assertEquals(0.12, m.round(d), 0.0);
     }
 }
