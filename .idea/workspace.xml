@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50729f44-96cd-42e5-afde-18c7bc447ac0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codetest/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codetest/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/prospects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/dist/prospects.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +56,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/dist" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
@@ -67,8 +69,9 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Emilia\OneDrive\Documents\Övrigt\codetest-crosskey\src\main\resources" />
       <recent name="C:\Users\Emilia\OneDrive\Documents\Övrigt\codetest-crosskey\src\dist" />
+      <recent name="C:\Users\Emilia\OneDrive\Documents\Övrigt\codetest-crosskey\src\main\conf" />
+      <recent name="C:\Users\Emilia\OneDrive\Documents\Övrigt\codetest-crosskey\src\main\resources" />
       <recent name="C:\Users\Emilia\OneDrive\Documents\Övrigt\codetest-crosskey\src\main\java\codetest" />
     </key>
   </component>
@@ -180,7 +183,7 @@
       <workItem from="1582638560885" duration="2905000" />
       <workItem from="1582655875299" duration="947000" />
       <workItem from="1582666374285" duration="7724000" />
-      <workItem from="1582758205669" duration="304000" />
+      <workItem from="1582758205669" duration="1840000" />
     </task>
     <servers />
   </component>
@@ -203,10 +206,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="490" y="229" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1280.680@0.0.1280.680" timestamp="1582639070709" />
-    <state x="421" y="82" key="FileChooserDialogImpl" timestamp="1582720224377">
+    <state x="421" y="82" key="FileChooserDialogImpl" timestamp="1582795885088">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1582720224377" />
+    <state x="421" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1582795885088" />
     <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1582746236996">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

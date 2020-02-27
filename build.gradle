@@ -45,3 +45,10 @@ task copyRes(type: Copy) {
     from 'src/main/resources/prospects.txt'
     into 'src/dist'
 }
+
+distZip {
+    into(project.name) {
+        from '.'
+        include 'conf/*'
+    }
+}
