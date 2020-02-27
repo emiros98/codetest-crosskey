@@ -46,11 +46,6 @@ public class Main {
      */
     private void getInput() throws IOException {
         String absolutePath = new File("").getAbsolutePath(); //find absolute path
-        //System.out.println(filePath);
-        // filePath + "/src/main/resources/prospects.txt"
-
-        //InputStream is = getClass().getClassLoader().getResourceAsStream("prospects.txt");
-        //InputStreamReader isr = new InputStreamReader(is);
 
         BufferedReader stdinReader = new BufferedReader(new InputStreamReader(System.in)); // Reader for user input
         String filename = stdinReader.readLine();
